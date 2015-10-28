@@ -1,7 +1,7 @@
 public class AlgorithmTester {
 
 	public static void main(String[] args) {
-		SortingAlgorithm s = new ShellSort();
+		SortingAlgorithm s = new HeapSort();
 		int numElements = 2000000;
 		int[] v = ArrayManager.setUpArray(numElements);
 

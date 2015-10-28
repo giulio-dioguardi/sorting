@@ -2,7 +2,7 @@ public class CumulativeTest {
 
 	public static void main(String[] args) {
 		SortingAlgorithm[] s = new SortingAlgorithm[] { new QuickSort(), new MergeSort(), new HeapSort(),
-				new RadixSortLSD(), new SelectionSort() };
+				new RadixSortLSD(), new ShellSort() };
 		printHeader(s);
 
 		for (double numElementsD = 1000; numElementsD < 10000000; numElementsD *= 1.09) {

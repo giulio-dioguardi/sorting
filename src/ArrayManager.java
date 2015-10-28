@@ -15,9 +15,7 @@ public class ArrayManager {
 		long beginQ = System.currentTimeMillis();
 		s.sort(v, 0, v.length - 1);
 		long endQ = System.currentTimeMillis();
-		// System.out.println("Quick sort took: " + (endQ - beginQ) +
-		// "ms.");
-		String line = String.valueOf((endQ - beginQ));
+		String line = String.valueOf(endQ - beginQ);
 		return line;
 	}
 

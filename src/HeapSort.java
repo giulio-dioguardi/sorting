@@ -14,11 +14,8 @@ public class HeapSort implements SortingAlgorithm {
 	}
 
 	private void heapify(int v[]) {
-		int start = (v.length - 2) / 2;
-
-		while (start >= 0) {
+		for (int start = (v.length - 2) / 2; start >= 0; start--) {
 			siftDown(v, start, v.length - 1);
-			start--;
 		}
 	}
 
