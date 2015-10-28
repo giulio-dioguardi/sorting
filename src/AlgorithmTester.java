@@ -1,8 +1,8 @@
 public class AlgorithmTester {
 
 	public static void main(String[] args) {
-		SortingAlgorithm s = new SelectionSort();
-		int numElements = 200000;
+		SortingAlgorithm s = new ShellSort();
+		int numElements = 2000000;
 		int[] v = ArrayManager.setUpArray(numElements);
 
 		String str = ArrayManager.getSorted(s, v);

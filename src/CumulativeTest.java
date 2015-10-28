@@ -2,7 +2,7 @@ public class CumulativeTest {
 
 	public static void main(String[] args) {
 		SortingAlgorithm[] s = new SortingAlgorithm[] { new QuickSort(), new MergeSort(), new HeapSort(),
-				new RadixSortLSD() };
+				new RadixSortLSD(), new SelectionSort() };
 		printHeader(s);
 
 		for (double numElementsD = 1000; numElementsD < 10000000; numElementsD *= 1.09) {
@@ -24,11 +24,9 @@ public class CumulativeTest {
 	public static void printHeader(SortingAlgorithm[] s) {
 		String str = "NumElements;";
 		for (int i = 0; i < s.length; i++) {
-			str += s[i].getName();
-			if (i != s.length - 1) {
-				str += ';';
-			}
+			str += s[i].getName() + ';';
 		}
+		str += "Total";
 		System.out.println(str);
 	}
 
