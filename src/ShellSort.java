@@ -2,7 +2,7 @@
 public class ShellSort implements SortingAlgorithm {
 
 	@Override
-	public void sort(int[] v, int left, int right) {
+	public void sort(int[] v) {
 		// TODO Auto-generated method stub
 		for (int col = v.length / 3;; col /= 3) {
 			if (col == 0)

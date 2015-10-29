@@ -1,7 +1,7 @@
 
 public class SelectionSort implements SortingAlgorithm {
 	@Override
-	public void sort(int[] v, int left, int right) {
+	public void sort(int[] v) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < v.length; i++) { // invoer = array met integers
 

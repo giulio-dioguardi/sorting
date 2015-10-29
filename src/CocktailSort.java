@@ -2,7 +2,7 @@
 public class CocktailSort implements SortingAlgorithm {
 
 	@Override
-	public void sort(int[] v, int left, int right) {
+	public void sort(int[] v) {
 		boolean swapped;
 		do {
 			swapped = false;

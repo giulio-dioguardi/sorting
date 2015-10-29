@@ -1,6 +1,10 @@
 
 public class QuickSort implements SortingAlgorithm {
-	public void sort(int v[], int left, int right) {
+	public void sort(int v[]) {
+		qsort(v, 0, v.length - 1);
+	}
+
+	private void qsort(int v[], int left, int right) {
 		int last;
 		if (left >= right)
 			return;
@@ -12,8 +16,8 @@ public class QuickSort implements SortingAlgorithm {
 			}
 		}
 		swapper.swap(v, left, last);
-		sort(v, left, last - 1);
-		sort(v, last + 1, right);
+		qsort(v, left, last - 1);
+		qsort(v, last + 1, right);
 	}
 
 	@Override

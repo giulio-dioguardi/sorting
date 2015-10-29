@@ -1,7 +1,7 @@
 
 public class HeapSort implements SortingAlgorithm {
 
-	public void sort(int v[], int l, int r) {
+	public void sort(int v[]) {
 		heapify(v);
 
 		int end = v.length - 1;

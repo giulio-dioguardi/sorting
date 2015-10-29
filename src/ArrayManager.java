@@ -13,7 +13,7 @@ public class ArrayManager {
 
 	public static String getSorted(SortingAlgorithm s, int v[]) {
 		long beginQ = System.currentTimeMillis();
-		s.sort(v, 0, v.length - 1);
+		s.sort(v);
 		long endQ = System.currentTimeMillis();
 		String line = String.valueOf(endQ - beginQ);
 		return line;

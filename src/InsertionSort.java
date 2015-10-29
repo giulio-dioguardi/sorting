@@ -2,7 +2,7 @@
 public class InsertionSort implements SortingAlgorithm {
 
 	@Override
-	public void sort(int[] v, int left, int right) {
+	public void sort(int[] v) {
 		// TODO Auto-generated method stub
 		for (int i = 1; i < v.length; i++) {
 			int hulp = v[i];

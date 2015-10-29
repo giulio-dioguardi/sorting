@@ -5,11 +5,10 @@ public class RadixSortLSD implements SortingAlgorithm {
 	/**
 	 * Rearranges the array of 32-bit integers in ascending order. This is about
 	 * 2-3x faster than Arrays.sort().
-	 *
 	 * @param a
 	 *            the array to be sorted
 	 */
-	public void sort(int[] a, int ja, int nee) {
+	public void sort(int[] a) {
 		int BITS = 32; // each int is 32 bits
 		int W = BITS / BITS_PER_BYTE; // each int is 4 bytes
 		int R = 1 << BITS_PER_BYTE; // each bytes is between 0 and 255

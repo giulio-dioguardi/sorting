@@ -1,7 +1,7 @@
 
 public class MergeSort implements SortingAlgorithm {
 
-	public void sort(int v[], int left, int right) {
+	public void sort(int v[]) {
 		if (v.length <= 1) {
 			return;
 		}
@@ -16,8 +16,8 @@ public class MergeSort implements SortingAlgorithm {
 			vRight[i - i1] = v[i];
 		}
 
-		sort(vLeft, 0, 0);
-		sort(vRight, 0, 0);
+		sort(vLeft);
+		sort(vRight);
 
 		int iLeft = 0;
 		int iRight = 0;
