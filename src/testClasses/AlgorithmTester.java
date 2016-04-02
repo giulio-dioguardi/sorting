@@ -15,11 +15,9 @@ public class AlgorithmTester {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Sorting Algorithm Playground!");
 		printMenu();
-		s = AlgorithmCreator
-				.createAlgorithm(AlgorithmType.values()[readFromUser("Select an item from the list using the number")]);
 		s = AlgorithmCreator.createAlgorithm(AlgorithmType.RADIX_SORT_LSD);
-		numElements = readFromUser("Select the number of elements:");
-		numTries = readFromUser("Select the number of repetitions: ");
+		numElements = 6000000;// readFromUser("Select the number of elements:");
+		numTries = 70;// readFromUser("Select the number of repetitions: ");
 		processInputs();
 	}
 
@@ -29,17 +27,11 @@ public class AlgorithmTester {
 		scanner.reset();
 		boolean bError = true;
 
-		/*while (true) {
-			System.out.println(title);
-			if (scanner.hasNextInt()) {
-				output = scanner.nextInt();
-				break;
-			} else {
-				scanner.next();
-				scanner.reset();
-				continue;
-			}
-		}*/
+		/*
+		 * while (true) { System.out.println(title); if (scanner.hasNextInt()) {
+		 * output = scanner.nextInt(); break; } else { scanner.next();
+		 * scanner.reset(); continue; } }
+		 */
 
 		do {
 			try {
@@ -74,7 +66,7 @@ public class AlgorithmTester {
 			System.out.println("Processing.....");
 			int[] v = ArrayManager.setUpArray(numElements);
 			long totalTime = 0;
-			for (int i = 0; i < numTries; i++) {
+			for (int i = 1; i <= numTries - 1; i++) {
 				int[] w = v.clone();
 				long beginTime = System.currentTimeMillis();
 				s.sort(w);
@@ -83,8 +75,14 @@ public class AlgorithmTester {
 				// System.out.println("Sorting algorithm " + s.getName() + "
 				// took: "
 				// + str + "ms.");
+				if (i % 10 == 0) {
+					System.out.print(".");
+				}
+				if (i % (80 * 10) == 0) {
+					System.out.print("\n");
+				}
 			}
-
+			System.out.print("\n");
 			// ArrayManager.printResults(v);
 			System.out.println("Sorting algorithm " + s.getName() + " took " + String.valueOf(totalTime) + "ms to sort "
 					+ numElements + " elements " + numTries + " times.");
