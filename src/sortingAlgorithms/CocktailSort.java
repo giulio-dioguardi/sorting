@@ -27,7 +27,7 @@ public class CocktailSort implements SortingAlgorithm {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		// TODO Auto-generated method stub
 		return "Cocktailshaker Sort";
 	}

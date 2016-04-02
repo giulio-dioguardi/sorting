@@ -38,7 +38,7 @@ public class CycleSort implements SortingAlgorithm {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		// TODO Auto-generated method stub
 		return "Cycle Sort";
 	}

@@ -26,7 +26,7 @@ public class CombSort implements SortingAlgorithm {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		return "Comb Sort";
 	}
 

@@ -17,7 +17,7 @@ public class InsertionSort implements SortingAlgorithm {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		// TODO Auto-generated method stub
 		return "Insertion Sort";
 	}

@@ -44,7 +44,7 @@ public class MergeSortInPlace implements SortingAlgorithm {
 	}
 	
 	@Override
-	public String getName() {
+	public String toString() {
 		return "Merge Sort in place";
 	}
 

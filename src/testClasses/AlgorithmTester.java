@@ -56,7 +56,7 @@ public class AlgorithmTester {
 		System.out.println("\n---MENU---\n");
 		for (AlgorithmType type : AlgorithmType.values()) {
 			SortingAlgorithm s = AlgorithmCreator.createAlgorithm(type);
-			System.out.println(type.ordinal() + "\t" + s.getName());
+			System.out.println(type.ordinal() + "\t" + s);
 		}
 
 	}
@@ -84,7 +84,7 @@ public class AlgorithmTester {
 			}
 			System.out.print("\n");
 			// ArrayManager.printResults(v);
-			System.out.println("Sorting algorithm " + s.getName() + " took " + String.valueOf(totalTime) + "ms to sort "
+			System.out.println("Sorting algorithm " + s + " took " + String.valueOf(totalTime) + "ms to sort "
 					+ numElements + " elements " + numTries + " times.");
 			System.out.println("That's an average of " + String.valueOf(((double) (totalTime) / numTries) * 1000)
 					+ " µs per time.");

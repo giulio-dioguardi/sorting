@@ -54,7 +54,7 @@ public class RadixSortLSD implements SortingAlgorithm {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		// TODO Auto-generated method stub
 		return "Radix Sort LSD";
 	}

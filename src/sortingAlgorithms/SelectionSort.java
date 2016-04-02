@@ -17,7 +17,7 @@ public class SelectionSort implements SortingAlgorithm {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		// TODO Auto-generated method stub
 		return "Selection Sort";
 	}

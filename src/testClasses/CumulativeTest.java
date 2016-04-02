@@ -39,7 +39,7 @@ public class CumulativeTest {
 		StringBuilder str = new StringBuilder();
 		str.append("NumElements;");
 		for (int i = 0; i < s.length; i++) {
-			str.append(s[i].getName());
+			str.append(s[i]);
 			str.append(';');
 		}
 		str.append("Total");

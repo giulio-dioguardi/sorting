@@ -13,7 +13,7 @@ public class BubbleSort implements SortingAlgorithm {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		// TODO Auto-generated method stub
 		return "Bubble Sort";
 	}

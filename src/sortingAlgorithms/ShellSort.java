@@ -21,7 +21,7 @@ public class ShellSort implements SortingAlgorithm {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		// TODO Auto-generated method stub
 		return "Shell Sort";
 	}

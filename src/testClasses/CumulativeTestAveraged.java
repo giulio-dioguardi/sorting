@@ -34,7 +34,7 @@ public class CumulativeTestAveraged {
 		System.out.println("Results averaged by :" + averagingNumber);
 		String str = "NumElements;";
 		for (int i = 0; i < s.length; i++) {
-			str += s[i].getName() + ';';
+			str += s[i].toString() + ';';
 		}
 		str += "Total";
 		System.out.println(str);
