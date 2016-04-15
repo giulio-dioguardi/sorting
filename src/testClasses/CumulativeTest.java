@@ -30,7 +30,6 @@ public class CumulativeTest {
 				System.out.println(line.toString());
 			}
 		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
 			System.out.println(e.getMessage());
 		}
 	}

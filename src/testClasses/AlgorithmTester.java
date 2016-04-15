@@ -83,7 +83,6 @@ public class AlgorithmTester {
 				}
 			}
 			System.out.print("\n");
-			// ArrayManager.printResults(v);
 			System.out.println("Sorting algorithm " + s + " took " + String.valueOf(totalTime) + "ms to sort "
 					+ numElements + " elements " + numTries + " times.");
 			System.out.println("That's an average of " + String.valueOf(((double) (totalTime) / numTries) * 1000)
