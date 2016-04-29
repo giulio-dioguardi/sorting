@@ -15,9 +15,9 @@ public class AlgorithmTester {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Sorting Algorithm Playground!");
 		//printMenu();
-		s = AlgorithmCreator.createAlgorithm(AlgorithmType.MERGE_SORT);
-		numElements = 6000;// readFromUser("Select the number of elements:");
-		numTries = 7000;// readFromUser("Select the number of repetitions: ");
+		s = AlgorithmCreator.createAlgorithm(AlgorithmType.values()[Integer.parseInt(args[0])]);
+		numElements = Integer.parseInt(args[1]);//6000;// readFromUser("Select the number of elements:");
+		numTries = Integer.parseInt(args[2]); //7000;// readFromUser("Select the number of repetitions: ");
 		processInputs();
 	}
 
