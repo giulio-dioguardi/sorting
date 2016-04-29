@@ -14,10 +14,10 @@ public class AlgorithmTester {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Sorting Algorithm Playground!");
-		printMenu();
-		s = AlgorithmCreator.createAlgorithm(AlgorithmType.RADIX_SORT_LSD);
-		numElements = 6000000;// readFromUser("Select the number of elements:");
-		numTries = 70;// readFromUser("Select the number of repetitions: ");
+		//printMenu();
+		s = AlgorithmCreator.createAlgorithm(AlgorithmType.MERGE_SORT);
+		numElements = 6000;// readFromUser("Select the number of elements:");
+		numTries = 7000;// readFromUser("Select the number of repetitions: ");
 		processInputs();
 	}
 
